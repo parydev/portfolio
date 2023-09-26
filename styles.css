@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: column;
+}
+.navbar-style{
+    border: 2px solid black;
+    
+}
+.header-sec1{
+    display: flex;
+    justify-content: space-between;
+}
+.header-sec1 h1 a{
+    text-decoration: none;
+    margin-top: 10px;
+    color: #fff;
+    
+}
+.profile-section{
+    
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    text-align: center;
+}
+.profile-img-style{
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid rgb(44, 47, 63);
+}
+.header-style{
+    
+    width:17%;
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #000; */
+    float: left;
+    position: fixed;
+    
+}
+.header-sec1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 20px 0px;
+    padding: 10px; 
+}
+.sec1-style{
+    border: 2px solid red;
+    width: 100%;
+    height: 100%;
+}
+.social-links{
+    border: 2px solid black;
+    margin: 10px 0px;
+    display: flex;
+    
+}
+.social-links a{
+    padding: 10px;
+    color: #fff;
+}
+.header-sec2{
+    border: 2px solid black;
+    height: 500px;
+}
+.header-sec2 ul {
+    margin: 20px;
+}
+.header-sec2 ul li {
+    padding: 30px;
+    margin-left: 50px;
+    list-style-type: none;
+    
+    
+}
+.header-sec2 ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-sec3{
+    border: 2px solid black;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.section-styles{
+    
+    border: 2px solid red;
+    width: 83%;
+    height: auto;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.s1 , .s2 , .s3 , .s4{
+    border: 2px solid black;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+
+}
+
+
+
+
+
+
+
+.section-imagebanner-style{
+   
+   position: relative;
+    height: auto;
+    float: right;
+    overflow: hidden;
+    border: 2px solid blue;
+    margin: 10px;
+}
+
+
+
+.bannertext{
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    font-size: 40px;
+}
+.section-about-style{
+    width: 100%;
+    border: 2px solid blue;
+    margin: 10px;
+    position: relative;
+     height: 500px;
+}
+
+
+
+
+
+
+
+
