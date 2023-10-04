@@ -13,8 +13,15 @@
     
 </head>
 <body>
-
-  <header class="header-style">
+  <div class="mobile-nav-toggle" onclick="myFunction(this)">
+    <!-- <i class="fa fa-bars "></i> -->
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  
+  
+  <header class="header-style" id="mydiv">
     <div class="header-profile-area">
         <div class="profile-photo-style">
             <img src="images/1.png" class="profile-img-style">
@@ -42,7 +49,7 @@
     </div>
     <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active">
+          <li><a href="#home" class="nav-link scrollto active">
             <i class=" bx fa fa-home"></i>
             <span>Home</span></a>
         </li>
@@ -78,20 +85,19 @@
         </div>
     </div>  -->
   </header>
-  <div class="main-section-styles">
-    <div>
-        
+  <section class="s1" id="#home">
+    <img src="images/banner.jpg">
+    <div class="bannertext">
+        <h1>Parisa Fallahi</h1>
+        <span>I'm
+            <span id="to-change" ></span>
+        </span>
     </div>
-    <section class="s1">
-        <img src="images/banner.jpg">
-        <div class="bannertext">
-            <h1>Parisa Fallahi</h1>
-            <span>I'm
-                <span id="to-change" ></span>
-            </span>
-        </div>
-    </section>
-    <section class="container">
+</section>
+  <div class="main-section-styles" id="home">
+    
+    
+    <section class="container" id="about">
         <div>
             <div class="s2-header">
                 <h2>About</h2>
@@ -140,7 +146,7 @@
             
         </div>
     </section>
-     <section class="container">
+     <section class="container" id="fact">
         <div class="s2-header">
             <h2>Facts</h2>
             <p>
@@ -233,7 +239,7 @@
         </div>
      </section>  
 
-     <section class="container">
+     <section class="container" id="resume">
         <div class="s2-header">
             <h2>Resume</h2>
             <p>
@@ -310,7 +316,7 @@
            
         </div>
      </section>
-     <section class="container">
+     <section class="container" id="portfolio">
         <div class="s2-header">
             <h2>Portfolio</h2>
             <p>
@@ -328,7 +334,7 @@
                 </ul>
             </div> -->
 
-            <div id="myBtnContainer">
+            <div id="myBtnContainer" >
               <button class="btn active" onclick="filterSelection('all')"> All</button>
               <button class="btn" onclick="filterSelection('cars')"> APP</button>
               <button class="btn" onclick="filterSelection('animals')"> CARD</button>
@@ -475,7 +481,7 @@
        
      </section>
 
-     <section class="container">
+     <section class="container" id="services">
         <div class="s2-header">
             <h2>Services</h2>
             <p>
@@ -699,7 +705,7 @@
        
     </section>
 
-    <section class="container">
+    <section class="container" id="contact">
       <div class="s2-header">
           <h2>Contact</h2>
           <p>
@@ -785,8 +791,12 @@
 
   </div>
 
- 
- 
+  <div onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa fa-arrow-up"></i>
+  </div>
+    
+
+  <script src="scripts.js"></script>
   <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="bundles/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.js"></script>
@@ -794,7 +804,7 @@
    
     <script src="filter.js"></script>
     <script src="swiper.js"></script>
-    <script src="scripts.js"></script>
+    
     
    
   
