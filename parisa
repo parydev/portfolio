@@ -1,0 +1,225 @@
+
+// const values = ['a Developer','a Photographer','a Yogist']
+// let index = 0
+
+// const change = () => {
+//   document.getElementById('to-change').innerHTML = values[index];
+//   index = ++index % values.length;
+ 
+//   setTimeout(change, 1300);
+// }
+
+// change()
+
+// const values = ['Developer','yoga','photographer','engineer']
+// let i = 0;
+// let j = 0;
+
+// const changeValues = () =>{
+
+      
+//         if( j<values[i].length){
+//           let var1= document.getElementById('to-change').innerHTML += values[i][(j++)%values[i].length];
+          
+              
+//         }
+//         else{
+//           i = (i+1)%values.length;
+//           j=0;
+//           var1 = '';
+//         }
+        
+        
+//           setTimeout(changeValues, 100);
+    
+//         }
+  
+//   changeValues();
+
+// const mySpan = document.getElementById('to-change');
+// const names = ['John', 'Mary', 'David', 'Sarah']; // an array of names
+// let nameIndex = 0;
+// let letterIndex = 0;
+
+// setInterval(() => {
+//   if (letterIndex < names[nameIndex].length) {
+//     mySpan.textContent += names[nameIndex][letterIndex];
+//     letterIndex++;
+//   } else {
+//     nameIndex = (nameIndex + 1) % names.length;
+//     letterIndex = 0;
+//     mySpan.textContent = '';
+//   }
+// }, 100);
+
+
+const myArray = ['Developer','Photographer','Yogist'];
+let i = 0;
+let j = 0;
+let var1= document.getElementById('to-change');
+
+function changeValues(){
+
+    if( j<myArray[i].length){
+
+      var1.textContent += myArray[i][(j++)%myArray[i].length];                   
+}
+else{
+  i = i+1;
+  j=0;
+  var1.textContent = '';
+}
+  
+setTimeout(changeValues,180);
+  
+}
+changeValues();
+  
+
+
+
+        
+(function(){
+  const buttons = document.querySelectorAll(".btn");
+  const images = document.querySelectorAll(".store-item");
+buttons.forEach(button => {
+  button.addEventListener('click' , (e) => {
+    e.preventDefault();
+    const filter = e.target.dataset.filter;
+
+    images.forEach((item) =>{
+      if(filter === 'all'){
+        item.style.display ='block';
+      }
+      else if(item.classList.contains(filter)){
+        item.style.display ='block';
+      }
+      else{
+        item.style.display ='none';
+      }
+    })
+  })
+})
+
+
+  })();
+    
+  
+----------------------------------------------------------------------------------------------------------------
+
+<div class="portfolio-container">
+          <div class="menu">
+            <a href="#" class="btn" data-filter="all">All</a>
+            <a href="#" class="btn" data-filter="app">App</a>
+            <a href="#" class="btn" data-filter="card">Card</a>
+            <a href="#" class="btn" data-filter="web">Web</a>
+          </div>
+       
+        <div class="box" id="store-items">
+              <div class="store-item app">
+                <img src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/portfolio/portfolio-2.jpg" class="store-img" alt="">
+              </div>
+              <div class="store-item card">
+                <img src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/portfolio/portfolio-1.jpg" class="store-img" alt="">
+              </div>
+              <div class="store-item web">
+                <img src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/portfolio/portfolio-3.jpg" class="store-img" alt="">
+              </div>
+              <div class="store-item app">
+                <img src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/portfolio/portfolio-4.jpg" class="store-img" alt="">
+              </div>
+              <div class="store-item card">
+                <img src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/portfolio/portfolio-5.jpg" class="store-img" alt="">
+              </div>
+              <div class="store-item web">
+                <img src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/portfolio/portfolio-6.jpg" class="store-img" alt="">
+              </div>
+              <div class="store-item app">
+                <img src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/portfolio/portfolio-7.jpg" class="store-img" alt="">
+              </div>
+              <div class="store-item card">
+                <img src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/portfolio/portfolio-8.jpg" class="store-img" alt="">
+              </div>
+              <div class="store-item web">
+                <img src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/portfolio/portfolio-8.jpg" class="store-img" alt="">
+              </div>
+              <div class="store-item app">
+                <img src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/portfolio/portfolio-9.jpg" class="store-img" alt="">
+              </div>
+              <div class="store-item card">
+                 <img src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="filterDiv fruits"></div>
+              <div class="filterDiv animals"></div>
+        </div>
+      </div>    
+
+-------------------------------------------------
+.portfolio-container{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4rem auto;
+   width: 90%;
+}
+.menu{
+    margin: 1.5rem 0;
+}
+.menu a{
+    
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #000;
+    padding: 8px 22px;
+}
+.box{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.store-item{
+    width: 300px;
+    padding: 1rem;
+}
+.store-item img{
+    width: 100%;
+    display: block;
+}
+.store-item img:hover{
+    opacity: 0.5;
+}
+.portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+/* .img-fluid {
+    max-width: 100%;
+    height: auto;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
